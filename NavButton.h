@@ -21,6 +21,9 @@ public:
 
 	std::string getLabel() const;
 	void setImage(std::string);
+	void click();
+	int  getMyClicks(){return this->clickCount;}
+	int  getTotalClicks(){return this->totalClicks;}
 
 };
 

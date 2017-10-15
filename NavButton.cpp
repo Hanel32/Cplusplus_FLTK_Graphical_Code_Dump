@@ -19,5 +19,10 @@ void NavButton::setImage(string filename) {
 	image(imageLabel);
 	this->resize(this->x(), this->y(), thumbnailsize + Viewer::borderSize, thumbnailsize + Viewer::borderSize);
 }
+void NavButton::click(){
+	totalClicks++;
+	clickCount++;
+	return;
+}
 
 int NavButton::totalClicks = 0;
